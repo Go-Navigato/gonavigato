@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Notice | Navigato</title>
+<meta name="description" content="Privacy Notice for Navigato, LLC — how we collect, use, and protect your information.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f1117;
+    --s1: #171b25;
+    --s2: #1e2333;
+    --bd: #2a2f40;
+    --bd2: #363d52;
+    --gold: #c9a84c;
+    --gold-dim: rgba(201,168,76,0.12);
+    --gold-line: rgba(201,168,76,0.3);
+    --tx: #e8e4dc;
+    --t2: #b8bdce;
+    --t3: #8890a8;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--tx);
+    font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 0.95rem;
+  }
+
+  a { color: var(--gold); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+  header {
+    border-bottom: 1px solid var(--bd);
+    padding: 1.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header .wordmark {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    letter-spacing: 0.02em;
+    color: var(--tx);
+  }
+
+  header nav a {
+    color: var(--t2);
+    font-size: 0.85rem;
+    margin-left: 1.5rem;
+  }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 5rem;
+  }
+
+  .eyebrow {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: clamp(2.2rem, 5vw, 3rem);
+    margin: 0.5rem 0 0.25rem;
+    color: var(--tx);
+  }
+
+  .updated {
+    color: var(--t3);
+    font-size: 0.85rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .intro {
+    color: var(--t2);
+    font-size: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--bd);
+    margin-bottom: 2.5rem;
+  }
+
+  nav.toc {
+    background: var(--s1);
+    border: 1px solid var(--bd);
+    border-radius: 4px;
+    padding: 1.5rem 1.75rem;
+    margin-bottom: 3rem;
+  }
+
+  nav.toc .eyebrow { display: block; margin-bottom: 0.75rem; }
+
+  nav.toc ol {
+    margin: 0;
+    padding-left: 1.1rem;
+    columns: 1;
+  }
+
+  nav.toc li { margin-bottom: 0.4rem; font-size: 0.9rem; }
+  nav.toc a { color: var(--t2); }
+  nav.toc a:hover { color: var(--gold); }
+
+  section {
+    margin-bottom: 2.75rem;
+    scroll-margin-top: 2rem;
+  }
+
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 2.2rem;
+    border-top: 1px solid var(--bd);
+    padding-top: 1.75rem;
+    margin: 0 0 1rem;
+    color: var(--tx);
+  }
+
+  h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin: 1.5rem 0 0.5rem;
+    color: var(--tx);
+  }
+
+  p { color: var(--t2); margin: 0 0 1rem; }
+  strong { color: var(--tx); font-weight: 500; }
+
+  .in-short {
+    font-style: italic;
+    color: var(--t3);
+    border-left: 2px solid var(--gold);
+    padding-left: 1rem;
+    margin: 0 0 1.25rem;
+  }
+
+  ul, ol.list { color: var(--t2); padding-left: 1.25rem; margin: 0 0 1rem; }
+  li { margin-bottom: 0.4rem; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    margin: 1rem 0 1.5rem;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  th, td {
+    border: 1px solid var(--bd);
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    vertical-align: top;
+    color: var(--t2);
+  }
+  th { color: var(--tx); font-weight: 500; background: var(--s2); }
+
+  address { font-style: normal; color: var(--t2); }
+
+  footer {
+    border-top: 1px solid var(--bd);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    color: var(--t3);
+    font-size: 0.85rem;
+  }
+
+  footer a { color: var(--t3); }
+
+  @media (min-width: 640px) {
+    nav.toc ol { columns: 2; column-gap: 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wordmark">Navigato</div>
+  <nav>
+    <a href="/">Home</a>
+    <a href="mailto:agraham@gonavigato.com">Get in touch</a>
+  </nav>
+</header>
+
+<main>
+  <div class="eyebrow">Legal</div>
+  <h1>Privacy Notice</h1>
+  <p class="updated">Last updated July 21, 2026</p>
+
+  <p class="intro">
+    This Privacy Notice for Navigato, LLC (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) describes how and why we
+    may access, collect, store, use, and/or share your personal information when you use our services, including when you
+    visit our website at <a href="http://www.gonavigato.com">gonavigato.com</a>, or otherwise engage with us in related ways,
+    such as marketing or events.
+  </p>
+
+  <p class="intro" style="border:none; padding-bottom:0;">
+    Questions or concerns? Reading this Privacy Notice will help you understand your privacy rights and choices. We are
+    responsible for making decisions about how your personal information is processed. If you do not agree with our
+    policies and practices, please do not use our Services. If you still have any questions or concerns, please contact
+    us at <a href="mailto:agraham@gonavigato.com">agraham@gonavigato.com</a>.
+  </p>
+
+  <nav class="toc" aria-label="Table of contents">
+    <span class="eyebrow">Contents</span>
+    <ol>
+      <li><a href="#infocollect">What information do we collect?</a></li>
+      <li><a href="#infouse">How do we process your information?</a></li>
+      <li><a href="#legalbases">What legal bases do we rely on?</a></li>
+      <li><a href="#whoshare">When and with whom do we share information?</a></li>
+      <li><a href="#ai">Do we offer AI-based products?</a></li>
+      <li><a href="#inforetain">How long do we keep your information?</a></li>
+      <li><a href="#infosafe">How do we keep your information safe?</a></li>
+      <li><a href="#infominors">Do we collect information from minors?</a></li>
+      <li><a href="#privacyrights">What are your privacy rights?</a></li>
+      <li><a href="#dnt">Do-Not-Track signals</a></li>
+      <li><a href="#uslaws">US state privacy rights</a></li>
+      <li><a href="#otherlaws">Rights in other regions</a></li>
+      <li><a href="#updates">Do we make updates to this notice?</a></li>
+      <li><a href="#contact">How can you contact us?</a></li>
+      <li><a href="#request">How can you review, update, or delete your data?</a></li>
+    </ol>
+  </nav>
+
+  <section id="infocollect">
+    <h2>1. What information do we collect?</h2>
+    <p class="in-short">In short: we collect personal information that you provide to us.</p>
+    <h3>Personal information you disclose to us</h3>
+    <p>
+      We collect personal information that you voluntarily provide to us when you express an interest in obtaining
+      information about us or our products and Services, when you participate in activities on the Services, or
+      otherwise when you contact us. The personal information we collect depends on the context of your interactions
+      with us, the choices you make, and the products and features you use, and may include:
+    </p>
+    <ul>
+      <li>Email addresses</li>
+      <li>Contact or authentication data</li>
+    </ul>
+    <p><strong>Sensitive information.</strong> We do not process sensitive information.</p>
+    <p>
+      All personal information that you provide to us must be true, complete, and accurate, and you must notify us of
+      any changes to such information.
+    </p>
+  </section>
+
+  <section id="infouse">
+    <h2>2. How do we process your information?</h2>
+    <p class="in-short">
+      In short: we process your information to provide, improve, and administer our Services, communicate with you,
+      for security and fraud prevention, and to comply with law. We may also process your information for other
+      purposes with your consent.
+    </p>
+    <p>We process your personal information for a variety of reasons, depending on how you interact with our Services, including:</p>
+    <ul>
+      <li><strong>To deliver and facilitate delivery of services to the user.</strong> We may process your information to provide you with the requested service.</li>
+      <li><strong>To save or protect an individual's vital interest.</strong> We may process your information when necessary to save or protect an individual&rsquo;s vital interest, such as to prevent harm.</li>
+    </ul>
+  </section>
+
+  <section id="legalbases">
+    <h2>3. What legal bases do we rely on to process your information?</h2>
+    <p class="in-short">
+      In short: we only process your personal information when we believe it is necessary and we have a valid legal
+      reason to do so under applicable law, like with your consent, to comply with laws, to provide you services, to
+      protect your rights, or to fulfill our legitimate business interests.
+    </p>
+
+    <h3>If you are located in the EU or UK</h3>
+    <p>The GDPR and UK GDPR require us to explain the valid legal bases we rely on to process your personal information. These include:</p>
+    <ul>
+      <li><strong>Consent.</strong> You can withdraw your consent at any time (see &ldquo;Withdrawing your consent&rdquo; below).</li>
+      <li><strong>Performance of a contract,</strong> including providing our Services or at your request prior to entering into a contract with you.</li>
+      <li><strong>Legal obligations,</strong> such as cooperating with a law enforcement body or regulatory agency, or exercising or defending our legal rights.</li>
+      <li><strong>Vital interests,</strong> where necessary to protect your vital interests or those of a third party.</li>
+    </ul>
+
+    <h3>If you are located in Canada</h3>
+    <p>
+      We may process your information with your express or implied consent, which you may withdraw at any time. In
+      some limited, legally permitted cases we may process information without consent &mdash; for example, for
+      investigations and fraud prevention, certain business transactions, or where required by a subpoena, warrant,
+      or court order.
+    </p>
+  </section>
+
+  <section id="whoshare">
+    <h2>4. When and with whom do we share your personal information?</h2>
+    <p class="in-short">In short: we may share information in specific situations described in this section and/or with the following third parties.</p>
+    <p>We may need to share your personal information in the following situations:</p>
+    <ul>
+      <li><strong>Business transfers.</strong> We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</li>
+    </ul>
+  </section>
+
+  <section id="ai">
+    <h2>5. Do we offer artificial intelligence-based products?</h2>
+    <p class="in-short">In short: we offer products, features, or tools powered by artificial intelligence, machine learning, or similar technologies.</p>
+    <p>
+      As part of our Services, we offer products, features, or tools powered by artificial intelligence, machine
+      learning, or similar technologies (collectively, &ldquo;AI Products&rdquo;). These tools are designed to
+      enhance your experience and provide innovative solutions. The terms in this Privacy Notice govern your use of
+      the AI Products within our Services.
+    </p>
+    <h3>Use of AI technologies</h3>
+    <p>
+      We provide the AI Products through a third-party service provider (&ldquo;AI Service Provider&rdquo;),
+      including Anthropic. Your input, output, and personal information will be shared with and processed by this AI
+      Service Provider to enable your use of our AI Products for the purposes outlined in this Privacy Notice. You
+      must not use the AI Products in any way that violates the terms or policies of any AI Service Provider.
+    </p>
+    <h3>Our AI products</h3>
+    <p>Our AI Products are designed for the following functions:</p>
+    <ul>
+      <li>AI automation</li>
+      <li>AI deployment</li>
+      <li>AI document generation</li>
+      <li>AI research</li>
+      <li>AI insights</li>
+    </ul>
+    <h3>How we process your data using AI</h3>
+    <p>
+      All personal information processed using our AI Products is handled in line with this Privacy Notice and our
+      agreements with third parties, to safeguard your personal information throughout the process.
+    </p>
+  </section>
+
+  <section id="inforetain">
+    <h2>6. How long do we keep your information?</h2>
+    <p class="in-short">In short: we keep your information for as long as necessary to fulfill the purposes outlined in this Privacy Notice, unless otherwise required by law.</p>
+    <p>
+      We will only keep your personal information for as long as it is necessary for the purposes set out in this
+      Privacy Notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or
+      other legal requirements). When we have no ongoing legitimate business need to process your personal
+      information, we will either delete or anonymize it, or, if that isn&rsquo;t possible, securely store it and
+      isolate it from further processing until deletion is possible.
+    </p>
+  </section>
+
+  <section id="infosafe">
+    <h2>7. How do we keep your information safe?</h2>
+    <p class="in-short">In short: we aim to protect your personal information through a system of organizational and technical security measures.</p>
+    <p>
+      We have implemented appropriate and reasonable technical and organizational security measures designed to
+      protect the personal information we process. However, no electronic transmission over the internet or
+      information storage technology can be guaranteed 100% secure, so we cannot promise that hackers, cybercriminals,
+      or other unauthorized parties will never defeat our security. You should only access the Services within a
+      secure environment.
+    </p>
+  </section>
+
+  <section id="infominors">
+    <h2>8. Do we collect information from minors?</h2>
+    <p class="in-short">In short: we do not knowingly collect data from or market to children under 18 years of age.</p>
+    <p>
+      By using the Services, you represent that you are at least 18, or the equivalent age of majority in your
+      jurisdiction, or that you are the parent or guardian of such a minor and consent to that minor&rsquo;s use of
+      the Services. If we learn that we have collected personal information from a user under 18, we will deactivate
+      the account and take reasonable measures to promptly delete that data. If you become aware of any such data,
+      please contact us at <a href="mailto:agraham@gonavigato.com">agraham@gonavigato.com</a>.
+    </p>
+  </section>
+
+  <section id="privacyrights">
+    <h2>9. What are your privacy rights?</h2>
+    <p class="in-short">
+      In short: depending on your state of residence in the US or region, you may have rights that allow you greater
+      access to and control over your personal information. You may review, change, or terminate your account at any
+      time.
+    </p>
+    <p>
+      In some regions (the EEA, UK, Switzerland, and Canada) you have certain rights under applicable data protection
+      laws, which may include the right to: request access to and a copy of your personal information; request
+      rectification or erasure; restrict processing; data portability; and object to certain processing, including
+      not being subject to solely automated decision-making that produces legal or similarly significant effects
+      without a path to human review. You can exercise these by contacting us (see &ldquo;How can you contact us
+      about this notice?&rdquo; below).
+    </p>
+    <p>
+      If you are in the UK and unhappy with how we&rsquo;ve handled your information, you can complain to us directly,
+      or to the Information Commissioner&rsquo;s Office:
+    </p>
+    <ul>
+      <li>Website: <a href="http://ico.org.uk/make-a-complaint" target="_blank" rel="noopener noreferrer">ico.org.uk/make-a-complaint</a></li>
+      <li>Helpline: 0303 123 1113</li>
+      <li>Post: Information Commissioner&rsquo;s Office, Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF</li>
+    </ul>
+    <p>
+      If you are in the EEA or UK, you may also complain to your <a href="https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm" target="_blank" rel="noopener noreferrer">Member State data protection authority</a>. If you are in Switzerland, you may contact the <a href="https://www.edoeb.admin.ch/edoeb/en/home.html" target="_blank" rel="noopener noreferrer">Federal Data Protection and Information Commissioner</a>.
+    </p>
+    <p id="withdrawconsent">
+      <strong>Withdrawing your consent:</strong> where we rely on your consent to process your information, you have
+      the right to withdraw it at any time by contacting us. This won&rsquo;t affect the lawfulness of processing
+      before the withdrawal, nor processing carried out on other lawful grounds.
+    </p>
+  </section>
+
+  <section id="dnt">
+    <h2>10. Controls for do-not-track features</h2>
+    <p>
+      Most web browsers include a Do-Not-Track (&ldquo;DNT&rdquo;) feature you can activate to signal your preference
+      not to have your online activity monitored. No uniform technology standard for recognizing DNT signals has been
+      finalized, so we do not currently respond to them. California law requires that we disclose this. If a legal
+      standard for DNT is adopted, we will update this notice accordingly.
+    </p>
+  </section>
+
+  <section id="uslaws">
+    <h2>11. Do United States residents have specific privacy rights?</h2>
+    <p class="in-short">
+      In short: if you are a resident of California, Colorado, Connecticut, Delaware, Florida, Indiana, Iowa,
+      Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee,
+      Texas, Utah, or Virginia, you may have the right to request access to and details about the personal
+      information we maintain about you, correct inaccuracies, obtain a copy of, or delete it, and withdraw consent
+      to our processing. These rights may be limited in some circumstances by applicable law.
+    </p>
+
+    <h3>Categories of personal information we collect</h3>
+    <p>The table below shows the categories of personal information we have collected in the past twelve months.</p>
+    <table>
+      <thead><tr><th>Category</th><th>Examples</th><th>Collected</th></tr></thead>
+      <tbody>
+        <tr><td>A. Identifiers</td><td>Real name, alias, postal address, phone number, unique or online identifier, IP address, email address, account name</td><td>Yes</td></tr>
+        <tr><td>B. California Customer Records personal information</td><td>Name, contact information, education, employment, financial information</td><td>No</td></tr>
+        <tr><td>C. Protected classification characteristics</td><td>Gender, age, race and ethnicity, national origin, marital status, other demographic data</td><td>No</td></tr>
+        <tr><td>D. Commercial information</td><td>Transaction information, purchase history, financial details, payment information</td><td>No</td></tr>
+        <tr><td>E. Biometric information</td><td>Fingerprints, voiceprints</td><td>No</td></tr>
+        <tr><td>F. Internet or network activity</td><td>Browsing history, search history, interactions with our and other websites, applications, or advertisements</td><td>No</td></tr>
+        <tr><td>G. Geolocation data</td><td>Device location</td><td>No</td></tr>
+        <tr><td>H. Audio, electronic, or similar information</td><td>Images, audio, video, or call recordings</td><td>No</td></tr>
+        <tr><td>I. Professional or employment-related information</td><td>Business contact details, job title, work history, professional qualifications</td><td>No</td></tr>
+        <tr><td>J. Education information</td><td>Student records and directory information</td><td>No</td></tr>
+        <tr><td>K. Inferences drawn from collected information</td><td>Profile or summary reflecting preferences and characteristics</td><td>No</td></tr>
+        <tr><td>L. Sensitive personal information</td><td>&mdash;</td><td>No</td></tr>
+      </tbody>
+    </table>
+
+    <p>
+      We use and retain Category A information for as long as you have an account with us. We have not disclosed,
+      sold, or shared personal information to third parties for a business or commercial purpose in the preceding
+      twelve months, and we do not sell or share personal information belonging to website visitors, users, or other
+      consumers.
+    </p>
+
+    <h3>Your rights</h3>
+    <ul>
+      <li><strong>Right to know</strong> whether we are processing your personal data</li>
+      <li><strong>Right to access</strong> your personal data</li>
+      <li><strong>Right to correct</strong> inaccuracies in your personal data</li>
+      <li><strong>Right to request deletion</strong> of your personal data</li>
+      <li><strong>Right to obtain a copy</strong> of the personal data you previously shared with us</li>
+      <li><strong>Right to non-discrimination</strong> for exercising your rights</li>
+      <li><strong>Right to opt out</strong> of processing used for targeted advertising, the sale of personal data, or certain profiling</li>
+    </ul>
+    <p>Depending on your state, you may also have the right to access categories of personal data processed, obtain a list of categories or specific third parties we&rsquo;ve disclosed data to, limit use of sensitive personal data, and review or correct automated profiling.</p>
+
+    <h3>How to exercise your rights</h3>
+    <p>
+      To exercise these rights, contact us at <a href="mailto:agraham@gonavigato.com">agraham@gonavigato.com</a> or
+      by submitting a <a href="https://app.termly.io/dsar/d70ee2ba-5577-46cb-a285-34ba401b4537" target="_blank" rel="noopener noreferrer">data subject access request</a>. You may designate an authorized agent to act on
+      your behalf, subject to proof of authorization. Upon receiving your request, we will need to verify your
+      identity before processing it.
+    </p>
+    <h3>Appeals</h3>
+    <p>
+      If we decline to act on your request, you may appeal by emailing us at
+      <a href="mailto:agraham@gonavigato.com">agraham@gonavigato.com</a>. We will explain our decision in writing.
+      If your appeal is denied, you may submit a complaint to your state attorney general.
+    </p>
+    <h3>California &ldquo;Shine the Light&rdquo; law</h3>
+    <p>
+      California Civil Code Section 1798.83 permits California residents to request, once a year and free of charge,
+      information about the categories of personal information (if any) we disclosed to third parties for direct
+      marketing purposes in the preceding calendar year. Submit such requests in writing using the contact details
+      below.
+    </p>
+  </section>
+
+  <section id="otherlaws">
+    <h2>12. Do other regions have specific privacy rights?</h2>
+    <p class="in-short">In short: you may have additional rights based on the country you reside in.</p>
+    <h3>Australia and New Zealand</h3>
+    <p>
+      We collect and process your personal information under Australia&rsquo;s Privacy Act 1988 and New Zealand&rsquo;s
+      Privacy Act 2020. You may request access to or correction of your personal information at any time by
+      contacting us. If you believe we are unlawfully processing your information, you may complain to the
+      <a href="https://www.oaic.gov.au/privacy/privacy-complaints/lodge-a-privacy-complaint-with-us" target="_blank" rel="noopener noreferrer"> Office of the Australian Information Commissioner</a> or the
+      <a href="https://www.privacy.org.nz/your-rights/making-a-complaint/" target="_blank" rel="noopener noreferrer"> Office of New Zealand Privacy Commissioner</a>.
+    </p>
+    <h3>Republic of South Africa</h3>
+    <p>
+      You may request access to or correction of your personal information by contacting us. If unsatisfied with our
+      response, you may contact the <a href="https://inforegulator.org.za/" target="_blank" rel="noopener noreferrer">Information Regulator (South Africa)</a> at
+      <a href="mailto:enquiries@inforegulator.org.za">enquiries@inforegulator.org.za</a> for general enquiries, or
+      <a href="mailto:PAIAComplaints@inforegulator.org.za">PAIAComplaints@inforegulator.org.za</a> /
+      <a href="mailto:POPIAComplaints@inforegulator.org.za">POPIAComplaints@inforegulator.org.za</a> for complaints.
+    </p>
+  </section>
+
+  <section id="updates">
+    <h2>13. Do we make updates to this notice?</h2>
+    <p class="in-short">In short: yes, we will update this notice as necessary to stay compliant with relevant laws.</p>
+    <p>
+      We may update this Privacy Notice from time to time. The updated version will be indicated by a revised date at
+      the top of this notice. If we make material changes, we may notify you by prominently posting a notice or
+      sending a direct notification. We encourage you to review this notice periodically.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>14. How can you contact us about this notice?</h2>
+    <p>
+      If you have questions or comments about this notice, you may email us at
+      <a href="mailto:agraham@gonavigato.com">agraham@gonavigato.com</a> or contact us by post at:
+    </p>
+    <address>
+      Navigato, LLC<br>
+      Catonsville, MD<br>
+      United States
+    </address>
+  </section>
+
+  <section id="request">
+    <h2>15. How can you review, update, or delete the data we collect from you?</h2>
+    <p>
+      Based on the applicable laws of your country or state of residence, you may have the right to request access
+      to the personal information we collect from you, details about how we&rsquo;ve processed it, correction of
+      inaccuracies, or deletion. You may also have the right to withdraw your consent to our processing of your
+      personal information. These rights may be limited in some circumstances by applicable law. To request to
+      review, update, or delete your personal information, please submit a
+      <a href="https://app.termly.io/dsar/d70ee2ba-5577-46cb-a285-34ba401b4537" target="_blank" rel="noopener noreferrer">data subject access request</a>.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  Navigato Career Coaching LLC &middot; Catonsville, Maryland &middot;
+  <a href="mailto:agraham@gonavigato.com">agraham@gonavigato.com</a>
+</footer>
+
+</body>
+</html>
